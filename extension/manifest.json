@@ -1,0 +1,21 @@
+{
+  "manifest_version": 3,
+  "name": "Sketchpad browser bridge",
+  "version": "0.2.0",
+  "description": "Lets sketchpad's agents search, read and act in this browser, in background tabs, without taking focus; consequential actions need the human's OK.",
+  "key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAsLN8UrWz/uMctSGDLBAFcLgIW4MorzWdaoEc4qMn5R3558WpR610sdbiz3QZNzrMkNeNYSuyoIw6XyF/Qa39KOzx/JJu3spB7lpbF9S9G8V/Tw5P5VoSOM/hlVpOeTndzjE22gV88PVVTqm+qX9cfAud1lCwLhjOo2SKcapM8ceFY0melTAhLjeKreeZdkQklU/EOQYuPNNaV8wcMNI1mZoCW0kU7XVjsH5jZ+hECgpde1/yKyLzklPWRbxBato9TqnsGt6ZNxKT/lwELnV2BReD/CkR1qI7AM5zatSpDjMAnUZN9iYg7KThj6qknXEuLwmyJTBOYx5Fo4KPscAqdQIDAQAB",
+  "background": {
+    "service_worker": "background.js"
+  },
+  "permissions": [
+    "nativeMessaging",
+    "tabs",
+    "tabGroups",
+    "scripting",
+    "alarms",
+    "storage"
+  ],
+  "host_permissions": [
+    "<all_urls>"
+  ]
+}
