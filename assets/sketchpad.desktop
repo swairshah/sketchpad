@@ -1,0 +1,9 @@
+[Desktop Entry]
+Name=Sketchpad
+Comment=Pen drawing pad
+Exec=/home/swair/code/sketchpad/target/release/sketchpad
+Icon=accessories-painting
+Type=Application
+StartupWMClass=sketchpad
+Categories=Graphics;
+Keywords=draw;sketch;pen;notebook;
