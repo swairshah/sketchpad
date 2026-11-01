@@ -1,0 +1,23 @@
+[package]
+name = "sketchpad"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+alacritty_terminal = "0.25"
+base64 = "0.23.1"
+evdev = "0.13.2"
+gpui = "0.2.2"
+image = "0.25"
+pulldown-cmark = { version = "0.13", default-features = false }
+resvg = "0.45"
+serde = { version = "1.0.229", features = ["derive"] }
+serde_json = { version = "1.0.154", features = ["preserve_order"] }
+syntect = { version = "5", default-features = false, features = ["default-syntaxes", "default-themes", "regex-fancy", "parsing"] }
+tiny-skia = "0.11"
+unicode-width = "0.2.3"
+
+# xattr 0.2.3 references libc::ENOATTR on Linux, where ENODATA is the
+# equivalent constant. Keep this patch until GPUI's tar dependency is updated.
+[patch.crates-io]
+xattr = { path = "vendor/xattr" }
